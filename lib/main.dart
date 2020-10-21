@@ -11,21 +11,21 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Container(
-                color: Colors.red,
-                width: 100.0,
-              ),
-              Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-                Container(color: Colors.yellow, width: 100.0, height: 100.0),
-                Container(color: Colors.green, width: 100.0, height: 100.0)
-              ]),
-              Container(color: Colors.blue, width: 100.0),
-            ],
-          ),
-        ),
+            child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            CircleAvatar(
+              radius: 50.0,
+              backgroundImage: AssetImage('images/howine.jpg'),
+            ),
+            Text(
+              'Howine Cafe',
+              style: TextStyle(fontSize: 20, fontFamily: 'Pacifico'),
+            ),
+            Text('Flutter Project',
+                style: TextStyle(fontSize: 20, fontFamily: 'SourceSansPro'))
+          ],
+        )),
       ),
     );
   }
